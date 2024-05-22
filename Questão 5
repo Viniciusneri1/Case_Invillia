@@ -1,0 +1,9 @@
+SELECT
+    text,
+    createdAt,
+    updatedAt
+FROM
+    `case_cats.csv_file.cat_facts`
+ORDER BY
+    RAND()
+LIMIT 100;
