@@ -1,0 +1,7 @@
+CREATE TABLE `case_cats.cat_facts.csv.cat_facts` (
+    fact_id STRING NOT NULL,
+    text STRING,
+    createdAt TIMESTAMP,
+    updatedAt TIMESTAMP,
+    PRIMARY KEY(fact_id)
+);
