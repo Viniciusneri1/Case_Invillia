@@ -1,0 +1,9 @@
+SELECT
+    fact_id,
+    text,
+    createdAt,
+    updatedAt
+FROM
+    `case_cats.csv_file.cat_facts`
+WHERE
+    updatedAt BETWEEN '2020-08-01 00:00:00' AND '2020-09-01 00:00:00';
