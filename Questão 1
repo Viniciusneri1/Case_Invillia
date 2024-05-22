@@ -17,6 +17,6 @@ df = pd.DataFrame(data)
 csv_file = 'cat_facts.csv'
 df.to_csv(csv_file, index=False)
 
-df = pd.read_csv(csv_file)
-df.head()
+#df = pd.read_csv(csv_file)
+#df.head()
 
