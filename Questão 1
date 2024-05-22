@@ -1,0 +1,22 @@
+import requests
+import pandas as pd
+
+# URL da API
+url = 'https://cat-fact.herokuapp.com/facts'
+
+# Solicitação API
+response = requests.get(url)
+data = response.json()
+
+print(data)
+
+# Converção DataFrame
+df = pd.DataFrame(data)
+
+# Salvando o DataFrame em CSV
+csv_file = 'cat_facts.csv'
+df.to_csv(csv_file, index=False)
+
+df = pd.read_csv(csv_file)
+df.head()
+
